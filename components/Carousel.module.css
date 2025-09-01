@@ -1,0 +1,194 @@
+.carouselContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    overflow: hidden;
+}
+
+.topText {
+    max-width: 1000px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.topTextMobile {
+    max-width: 1000px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-top: 2em;
+}
+
+.highlightedText {
+    color: #888;
+    transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+}
+
+.activeText {
+    color: #ff0099;
+    /* Highlight color */
+    font-weight: 800;
+}
+
+.carouselWrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+}
+
+.slidesContainer {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1200px;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    width: 70%;
+    height: 100%;
+    padding: 40px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    color: #fff;
+    pointer-events: none;
+}
+
+/* Active: full focus */
+.activeSlide {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    z-index: 3;
+    pointer-events: auto;
+}
+
+/* Previous: smaller + left */
+.prevSlide {
+    opacity: 0.6;
+    transform: translateX(-60%) scale(0.85);
+    z-index: 2;
+}
+
+/* Next: smaller + right */
+.nextSlide {
+    opacity: 0.6;
+    transform: translateX(60%) scale(0.85);
+    z-index: 2;
+}
+
+/* Hidden */
+.hiddenSlide {
+    opacity: 0;
+    transform: scale(0.5);
+    z-index: 1;
+}
+
+.navButton {
+    background: rgba(255, 255, 255, 0.1);
+    /* glassy look */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.navButton:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.slideCategory {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.productGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.productItem {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.productName {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.productDescription {
+    font-size: 1rem;
+    color: #ccc;
+    margin-left: 2em;
+
+}
+
+.accordionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.accordionContainerMobile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 2px;
+}
+
+.accordionItem {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.accordionHeader {
+    width: 100%;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.accordionContent {
+    background: #111;
+    padding: 10px 15px;
+}
+
+.accordionContent .productItem {
+    margin: 8px 0;
+}
