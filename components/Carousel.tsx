@@ -122,7 +122,8 @@ const Carousel = () => {
                     {products.map((p, i) => (
                         <span
                             key={i}
-                            className={`${styles.highlightedText} ${activeSlide === i ? styles.activeText : ''}`}
+                            className={styles.highlightedText}
+                            style={activeSlide === i ? { color: p.color } : {}}
                         >
                             {p.category}
                             {i < products.length - 1 ? ', ' : '.'}
@@ -130,6 +131,7 @@ const Carousel = () => {
                     ))}
                 </p>
             </div>
+
 
             <div className={styles.carouselWrapper}>
                 <button
@@ -170,7 +172,7 @@ const Carousel = () => {
                     <ChevronRight size={24} />
                 </button>
             </div>
-        </div>
+        </div >
     );
 };
 

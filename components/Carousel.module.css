@@ -31,11 +31,10 @@
     transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
 }
 
-.activeText {
+/* .activeText {
     color: #ff0099;
-    /* Highlight color */
     font-weight: 800;
-}
+} */
 
 .carouselWrapper {
     display: flex;
