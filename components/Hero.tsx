@@ -44,19 +44,19 @@ function Hero() {
     // Array of image data for cleaner code and easy scaling
     const slides = [
         {
-            src: "https://placehold.co/2000x600/F0F4C3/333333/png?text=Creative+Solutions",
+            src: "https://placehold.co/2000x600/212121/333333/png?text=Creative+Solutions",
             alt: "Creative Solutions"
         },
         {
-            src: "https://placehold.co/2000x600/E3F2FD/1A237E/png?text=Seamless+Integration",
+            src: "https://placehold.co/2000x600/212121/333333/png?text=Seamless+Integration",
             alt: "Seamless Integration"
         },
         {
-            src: "https://placehold.co/2000x600/FFECB3/BF360C/png?text=Innovative+Technology",
+            src: "https://placehold.co/2000x600/212121/333333/png?text=Innovative+Technology",
             alt: "Innovative Technology"
         },
         {
-            src: "https://placehold.co/2000x600/B2EBF2/006064/png?text=Data-Driven+Results",
+            src: "https://placehold.co/2000x600/212121/333333/png?text=Data-Driven+Results",
             alt: "Data-Driven Results"
         },
     ];
