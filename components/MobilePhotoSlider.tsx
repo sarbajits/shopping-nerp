@@ -28,7 +28,7 @@ const MobilePhotoSlider = () => {
 
     return (
         <div
-            className="lg:hidden relative w-full mt-20 h-64 p-2 overflow-hidden rounded-lg shadow-md"
+            className="lg:hidden relative w-full mt-20 h-64 overflow-hidden rounded-lg shadow-md"
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
         >

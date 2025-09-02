@@ -6,12 +6,12 @@ import MobilePhotoSlider from "@/components/MobilePhotoSlider";
 
 export default function Home() {
   return (
-    <>
+    <div className="">
       <MobilePhotoSlider />
       <Hero />
       <Carousel />
       <Categories />
       <FAQSection />
-    </>
+    </div>
   );
 }

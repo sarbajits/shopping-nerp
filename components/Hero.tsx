@@ -79,21 +79,25 @@ function Hero() {
     };
 
     return (
-        <div className="slider-container mx-2 mt-4 mb-2 relative lg:mt-20 lg:mx-8">
+        <div className="max-w-[88%] lg:max-w-none slider-container mx-auto mt-4 mb-2 relative lg:mt-20 lg:mx-8">
             <Slider {...settings}>
                 {slides.map((slide, index) => (
-                    <div key={index} className="slide overflow-hidden rounded-2xl">
+                    <div
+                        key={index}
+                        className="slide overflow-hidden rounded-2xl flex justify-center"
+                    >
                         <Image
                             src={slide.src}
                             alt={slide.alt}
                             width={1000}
                             height={300}
-                            className="w-full"
+                            className="w-full object-cover"
                         />
                     </div>
                 ))}
             </Slider>
         </div>
+
     );
 }
 
