@@ -17,19 +17,19 @@ const StorySection = () => {
                 <div className="max-w-4xl mx-auto">
                     <div className="flex border-b mb-8">
                         <button
-                            className={`py-3 px-6 font-medium ${activeTab === 'mission' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-500'}`}
+                            className={`py-3 px-6 font-medium ${activeTab === 'mission' ? 'text-fuchsia-600 border-b-2 border-fuchsia-600' : 'text-gray-500'}`}
                             onClick={() => setActiveTab('mission')}
                         >
                             Our Mission
                         </button>
                         <button
-                            className={`py-3 px-6 font-medium ${activeTab === 'vision' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-500'}`}
+                            className={`py-3 px-6 font-medium ${activeTab === 'vision' ? 'text-fuchsia-600 border-b-2 border-fuchsia-600' : 'text-gray-500'}`}
                             onClick={() => setActiveTab('vision')}
                         >
                             Our Vision
                         </button>
                         <button
-                            className={`py-3 px-6 font-medium ${activeTab === 'values' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-500'}`}
+                            className={`py-3 px-6 font-medium ${activeTab === 'values' ? 'text-fuchsia-600 border-b-2 border-fuchsia-600' : 'text-gray-500'}`}
                             onClick={() => setActiveTab('values')}
                         >
                             Our Values
@@ -38,7 +38,7 @@ const StorySection = () => {
 
                     <div className="transition-all duration-300">
                         {activeTab === 'mission' && (
-                            <div className="p-6 bg-blue-50 rounded-lg">
+                            <div className="p-6 bg-fuchsia-100 rounded-lg">
                                 <h3 className="text-2xl font-semibold mb-4 text-gray-800">Empowering Businesses Through Technology</h3>
                                 <p className="text-gray-700">
                                     Our mission is to provide innovative, scalable, and user-friendly digital solutions that help businesses thrive in the digital age. We believe in the power of technology to transform ideas into impactful realities.
@@ -46,7 +46,7 @@ const StorySection = () => {
                             </div>
                         )}
                         {activeTab === 'vision' && (
-                            <div className="p-6 bg-blue-50 rounded-lg">
+                            <div className="p-6 bg-fuchsia-100 rounded-lg">
                                 <h3 className="text-2xl font-semibold mb-4 text-gray-800">Shaping the Future of Digital Experiences</h3>
                                 <p className="text-gray-700">
                                     We envision a world where technology seamlessly enhances everyday life. Our vision is to be at the forefront of digital innovation, creating solutions that are not only functional but also delightful to use.
@@ -54,7 +54,7 @@ const StorySection = () => {
                             </div>
                         )}
                         {activeTab === 'values' && (
-                            <div className="p-6 bg-blue-50 rounded-lg">
+                            <div className="p-6 bg-fuchsia-100 rounded-lg">
                                 <h3 className="text-2xl font-semibold mb-4 text-gray-800">Our Core Values</h3>
                                 <ul className="list-disc pl-5 text-gray-700 space-y-2">
                                     <li><strong>Innovation:</strong> We constantly explore new ideas and approaches</li>

@@ -44,14 +44,14 @@ const TeamSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {teamMembers.map((member) => (
                         <div key={member.id} className="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg">
-                            <div className="h-48 bg-gradient-to-r from-blue-400 to-purple-500 flex items-center justify-center">
+                            <div className="h-48 bg-gradient-to-b from-fuchsia-600 to-fuchsia-400 flex items-center justify-center">
                                 <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center">
-                                    <span className="text-2xl font-bold text-blue-600">{member.name.charAt(0)}</span>
+                                    <span className="text-2xl font-bold text-fuchsia-600">{member.name.charAt(0)}</span>
                                 </div>
                             </div>
                             <div className="p-6 text-center">
                                 <h3 className="text-xl font-semibold text-gray-800 mb-1">{member.name}</h3>
-                                <p className="text-blue-600 mb-3">{member.role}</p>
+                                <p className="text-fuchsia-600 mb-3">{member.role}</p>
                                 <p className="text-gray-600">{member.description}</p>
                             </div>
                         </div>

@@ -8,7 +8,7 @@ const StatsSection = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsVisible(true);
-        }, 500);
+        }, 0);
 
         return () => clearTimeout(timer);
     }, []);

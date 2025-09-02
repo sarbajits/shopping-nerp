@@ -37,7 +37,7 @@ const AnimatedCounter = ({ value, duration = 2000, prefix = '', suffix = '' }: A
     }, [value, duration]);
 
     return (
-        <span className="text-4xl font-bold text-blue-600 mb-2">
+        <span className="text-4xl font-bold text-fuchsia-600 mb-2">
             {prefix}{count}{suffix}
         </span>
     );

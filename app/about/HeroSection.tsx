@@ -1,7 +1,7 @@
 // components/about/HeroSection.tsx
 const HeroSection = () => {
     return (
-        <section className="relative py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white overflow-hidden">
+        <section className="relative py-20 bg-gradient-to-b from-fuchsia-600 to-fuchsia-400 text-white overflow-hidden">
             <div className="absolute inset-0 bg-black opacity-20"></div>
             <div className="absolute top-0 right-0 -mr-40 mt-10 opacity-10">
                 <svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
