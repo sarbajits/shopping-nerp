@@ -26,7 +26,7 @@ const products: Product[] = [
             { name: 'NerpBooks', description: 'Accounting and financial management software.' },
             { name: 'NerpOK', description: 'Accounting and financial management software.' },
         ],
-        color: '#2563eb'
+        color: '#DD00DD'
     },
     {
         id: 2,
@@ -36,7 +36,7 @@ const products: Product[] = [
             { name: 'NerpIntegrate', description: 'Seamless integration with existing systems and platforms.' },
             { name: 'NerpAPIs', description: 'Robust API development for extended functionality.' }
         ],
-        color: '#7c3aed'
+        color: '#AA00FF'
     },
     {
         id: 3,
@@ -46,7 +46,7 @@ const products: Product[] = [
             { name: 'NerpTrain', description: 'Comprehensive training programs for your team.' },
             { name: 'NerpConsult', description: 'Expert consultation for business process optimization.' }
         ],
-        color: '#059669'
+        color: '#FF33FF'
     },
     {
         id: 4,
@@ -56,7 +56,7 @@ const products: Product[] = [
             { name: 'NerpHealthcare', description: 'Healthcare management and patient care systems.' },
             { name: 'NerpEducation', description: 'Learning management systems for educational institutions.' }
         ],
-        color: '#dc2626'
+        color: '#FF0099'
     }
 ];
 
@@ -83,7 +83,7 @@ const Carousel = () => {
     };
 
     if (isMobile) {
-        // 📱 Mobile View → Accordion
+        // Mobile View: Accordion
         return (
             <div className={styles.accordionContainerMobile}>
                 <h3 className={styles.topTextMobile}>We have 20+ products serving millions of customers across...</h3>

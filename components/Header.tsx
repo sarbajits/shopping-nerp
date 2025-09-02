@@ -14,7 +14,7 @@ const Header = () => {
     const navLinks = [
         { name: "Home", href: "/" },
         { name: "About us", href: "/about" },
-        { name: "Life@Nirmalya", href: "/life" },
+        { name: "Company", href: "/life" },
         { name: "Blogs & News", href: "/blogs" },
     ];
 
@@ -56,7 +56,7 @@ const Header = () => {
                             key={link.href}
                             href={link.href}
                             className={`relative text-base font-medium transition-colors duration-300 ${isScrolled
-                                ? "text-gray-700 hover:text-green-600"
+                                ? "text-gray-700 hover:text-fuchsia-600"
                                 : "text-white hover:text-gray-200"
                                 }`}
                         >
@@ -65,7 +65,7 @@ const Header = () => {
                             {path === link.href && (
                                 <span
                                     className={`absolute left-0 -bottom-1 rounded-full transition-all duration-300
-                                    ${path === link.href ? (isScrolled ? "h-[4px] w-full bg-green-600" : "h-[4px] w-9/12 bg-white") : ""}
+                                    ${path === link.href ? (isScrolled ? "h-[4px] w-full bg-fuchsia-600" : "h-[4px] w-9/12 bg-white") : ""}
                                     `}
                                 />
 
@@ -77,7 +77,7 @@ const Header = () => {
                 {/* Desktop Button */}
                 <div className="hidden md:block">
                     <Link href="/careers">
-                        <button className={`py-2 px-6 rounded-full font-semibold transition-all duration-300 ${isScrolled ? 'bg-green-500 text-white hover:bg-green-600' : 'border border-white text-white hover:bg-white hover:text-green-500'}`}>
+                        <button className={`py-2 px-6 rounded-full font-semibold transition-all duration-300 ${isScrolled ? 'bg-fuchsia-500 text-white hover:bg-fuchsia-600' : 'border border-white text-white hover:bg-white hover:text-fuchsia-500'}`}>
                             Join us
                         </button>
                     </Link>
@@ -108,7 +108,9 @@ const Header = () => {
                             </Link>
                         ))}
                         <Link href="/careers">
-                            <button className={`py-2 px-6 rounded-full font-semibold transition-all duration-300 ${isScrolled ? 'bg-green-500 text-white' : 'border border-white text-white'}`}>
+                            <button
+                                onClick={() => { toggleMenu(); }}
+                                className={`py-2 px-6 rounded-full font-semibold transition-all duration-300 ${isScrolled ? 'bg-fuchsia-500 text-white' : 'border border-white text-white'}`}>
                                 Join us
                             </button>
                         </Link>

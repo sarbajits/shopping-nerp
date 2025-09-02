@@ -48,11 +48,11 @@ const FAQSection = () => {
     ];
 
     return (
-        <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
-            <div className="container mx-auto px-4 max-w-4xl">
+        <section className="py-16 bg-gradient-to-b from-black to-gray-800">
+            <div className="container mx-auto px-4 max-w-6xl">
                 <div className="text-center mb-12">
-                    <h2 className="text-4xl font-bold text-gray-800 mb-4">Frequently Asked Questions</h2>
-                    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                    <h2 className="text-4xl font-bold text-fuchsia-500 mb-4">Frequently Asked Questions</h2>
+                    <p className="text-lg text-gray-50 max-w-2xl mx-auto">
                         Find answers to common questions about our services, process, and how we can help your business grow.
                     </p>
                 </div>
@@ -68,9 +68,9 @@ const FAQSection = () => {
                                 onClick={() => toggleFAQ(faq.id)}
                                 aria-expanded={activeId === faq.id}
                             >
-                                <span className="text-lg font-medium text-gray-800 pr-4">{faq.question}</span>
+                                <span className="text-lg font-medium text-fuchsia-500 pr-4">{faq.question}</span>
                                 <svg
-                                    className={`w-5 h-5 text-blue-600 transition-transform duration-300 ${activeId === faq.id ? 'transform rotate-180' : ''}`}
+                                    className={`w-5 h-5 text-fuchsia-600 transition-transform duration-300 ${activeId === faq.id ? 'transform rotate-180' : ''}`}
                                     fill="none"
                                     viewBox="0 0 24 24"
                                     stroke="currentColor"
@@ -80,17 +80,17 @@ const FAQSection = () => {
                             </button>
 
                             <div
-                                className={`px-6 pb-6 pt-0 overflow-hidden transition-all duration-300 ${activeId === faq.id ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
+                                className={`px-6 pt-0 overflow-hidden transition-all duration-300 ${activeId === faq.id ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
                             >
-                                <p className="text-gray-600">{faq.answer}</p>
+                                <p className="text-black pb-6">{faq.answer}</p>
                             </div>
                         </div>
                     ))}
                 </div>
 
                 <div className="mt-12 text-center">
-                    <p className="text-gray-600 mb-6">Still have questions? We're here to help!</p>
-                    <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-lg transition-colors duration-300">
+                    <p className="text-gray-50 mb-6">Still have questions? We're here to help!</p>
+                    <button className="bg-fuchsia-400 hover:bg-fuchsia-600 text-white font-medium py-3 px-8 rounded-lg transition-colors duration-300">
                         Contact Us
                     </button>
                 </div>

@@ -44,7 +44,7 @@ const CategoryPopup: React.FC<CategoryPopupProps> = ({ category, position }) => 
                 </div>
             )}
 
-            <h3 className="text-sm font-semibold text-gray-700 mb-3">
+            <h3 className="text-sm font-semibold text-fuchsia-500 mb-3">
                 Popular in {category.name}
             </h3>
             <div className="space-y-3">
