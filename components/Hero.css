@@ -28,11 +28,12 @@
 .slick-dots li {
     margin: 0 2px;
     display: inline-flex;
+    width: auto;
 }
 
 .slick-dots li .custom-dot-line {
     height: 2px;
-    width: 4px;
+    width: 8px;
     background: #bbb;
     border-radius: 2px;
     cursor: pointer;
@@ -40,6 +41,10 @@
 }
 
 .slick-dots li.slick-active .custom-dot-line {
-    width: 80px;
+    width: 40px;
     background: #dd00dd;
+}
+
+.slick-list {
+    border-radius: 1rem;
 }
