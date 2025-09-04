@@ -25,6 +25,8 @@ const products: Product[] = [
             { name: 'NerpRetail', description: 'Point of sale and inventory management for retail businesses.' },
             { name: 'NerpBooks', description: 'Accounting and financial management software.' },
             { name: 'NerpOK', description: 'Accounting and financial management software.' },
+            { name: 'NerpCheck', description: 'Accounting and financial management software.' },
+            { name: 'NerpDone', description: 'Accounting and financial management software.' },
         ],
         color: '#DD00DD'
     },

@@ -61,7 +61,7 @@ const FAQSection = () => {
                     {faqs.map((faq) => (
                         <div
                             key={faq.id}
-                            className="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300"
+                            className="bg-gray-800/50 rounded-lg shadow-md overflow-hidden transition-all duration-300"
                         >
                             <button
                                 className="w-full flex justify-between items-center p-6 text-left focus:outline-none"
@@ -82,7 +82,7 @@ const FAQSection = () => {
                             <div
                                 className={`px-6 pt-0 overflow-hidden transition-all duration-300 ${activeId === faq.id ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
                             >
-                                <p className="text-black pb-6">{faq.answer}</p>
+                                <p className="pl-2 pb-6 text-justify">{faq.answer}</p>
                             </div>
                         </div>
                     ))}
