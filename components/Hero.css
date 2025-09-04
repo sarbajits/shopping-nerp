@@ -1,4 +1,4 @@
-.slick-prev:before,
+/* .slick-prev:before,
 .slick-next:before {
     line-height: 40px;
     display: flex;
@@ -17,6 +17,19 @@
 .slick-prev:hover,
 .slick-next:hover {
     background: rgba(0, 0, 0, 0.8);
+} */
+
+.slick-prev:before,
+.slick-next:before {
+    content: none !important;
+}
+
+@media (max-width: 767px) {
+
+    .slick-prev,
+    .slick-next {
+        display: none !important;
+    }
 }
 
 .slick-dots {
