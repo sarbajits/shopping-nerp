@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import styles from './Carousel.module.css';
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronDown, ChevronLeft, ChevronRight, ChevronUp } from "lucide-react";
 
 interface ProductItem {
     name: string;
@@ -88,17 +88,23 @@ const Carousel = () => {
             <div className={styles.accordionContainerMobile}>
                 <h3 className={styles.topTextMobile}>We have 20+ products serving millions of customers across...</h3>
                 {products.map((product) => (
-                    <div key={product.id} className={styles.accordionItem}>
+                    <div key={product.id} className={styles.accordionItem} style={{ borderColor: product.color }}>
                         <button
                             className={styles.accordionHeader}
-                            style={{ backgroundColor: product.color }}
+                            style={{ borderColor: product.color }}
                             onClick={() => setOpenAccordion(openAccordion === product.id ? null : product.id)}
                         >
                             {product.category}
-                            <span>{openAccordion === product.id ? '▲' : '▼'}</span>
+                            <span className="inline-flex items-center">
+                                {openAccordion === product.id ? (
+                                    <ChevronUp className="w-4 h-4" />
+                                ) : (
+                                    <ChevronDown className="w-4 h-4" />
+                                )}
+                            </span>
                         </button>
                         {openAccordion === product.id && (
-                            <div className={styles.accordionContent}>
+                            <div className={styles.accordionContent} style={{ borderColor: product.color }}>
                                 {product.items.map((item, idx) => (
                                     <div key={idx} className={styles.productItem}>
                                         <span className={styles.productName}>{item.name}</span>

@@ -149,9 +149,9 @@
 .productDescription {
     font-size: 1rem;
     color: #ccc;
-    background-color: #21212140;
+    background-color: #40404040;
     padding: 8px;
-    border-radius: 1em;
+    border-radius: 1rex;
 }
 
 .accordionContainer {
@@ -164,11 +164,10 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 2px;
+    padding: 6px;
 }
 
 .accordionItem {
-    border-radius: 10px;
     overflow: hidden;
 }
 
@@ -177,16 +176,21 @@
     padding: 15px;
     color: white;
     font-weight: bold;
-    border: none;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
     font-size: 16px;
+    border-top: 1rex;
+    border-style: solid;
+    border-radius: 1rem;
 }
 
 .accordionContent {
     background: #111;
     padding: 10px 15px;
+    border: 2px solid white;
+    /* border-top: none; */
+    border-radius: 0 0 1rem 1rem;
 }
 
 .accordionContent .productItem {
