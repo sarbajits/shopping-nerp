@@ -8,11 +8,15 @@ const MobilePhotoSlider = () => {
 
     // Array of placeholder image URLs with different themes
     const slides = [
-        "https://placehold.co/600x400/2563eb/white?text=Nerp.in+Mobile",
-        "https://placehold.co/600x400/7e22ce/white?text=Web+Solutions",
-        "https://placehold.co/600x400/dc2626/white?text=App+Development",
-        "https://placehold.co/600x400/059669/white?text=UI/UX+Design",
-        "https://placehold.co/600x400/ea580c/white?text=Digital+Marketing",
+        // "https://placehold.co/600x400/2563eb/white?text=Nerp.in+Mobile",
+        // "https://placehold.co/600x400/7e22ce/white?text=Web+Solutions",
+        // "https://placehold.co/600x400/dc2626/white?text=App+Development",
+        // "https://placehold.co/600x400/059669/white?text=UI/UX+Design",
+        // "https://placehold.co/600x400/ea580c/white?text=Digital+Marketing",
+        "https://template.canva.com/EAGm8QmWPNs/1/0/800w-jufneOEXpuA.jpg",
+        "https://template.canva.com/EAGdujDpBQ8/1/0/800w-aBbq1tVYqy0.jpg",
+        "https://template.canva.com/EAGTMetvy5I/1/0/800w-4He6WVTrpxU.jpg",
+        "https://template.canva.com/EAGW0JiCgDk/3/0/800w-dmJsxfycg3E.jpg"
     ];
 
     // Auto-advance the slider
@@ -21,7 +25,7 @@ const MobilePhotoSlider = () => {
 
         const interval = setInterval(() => {
             setCurrentSlide((prev) => (prev + 1) % slides.length);
-        }, 1000);
+        }, 2000);
 
         return () => clearInterval(interval);
     }, [slides.length, isPaused]);
