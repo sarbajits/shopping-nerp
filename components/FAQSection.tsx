@@ -68,7 +68,7 @@ const FAQSection = () => {
                                 onClick={() => toggleFAQ(faq.id)}
                                 aria-expanded={activeId === faq.id}
                             >
-                                <span className="text-lg font-medium text-fuchsia-500 pr-4">{faq.question}</span>
+                                <span className="text-lg font-medium text-fuchsia-200 pr-4">{faq.question}</span>
                                 <svg
                                     className={`w-5 h-5 text-fuchsia-600 transition-transform duration-300 ${activeId === faq.id ? 'transform rotate-180' : ''}`}
                                     fill="none"

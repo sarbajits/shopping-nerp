@@ -1,3 +1,5 @@
+import AboutTab from "@/components/AboutTab";
+import AppDownload from "@/components/AppDownload";
 import Carousel from "@/components/Carousel";
 import Categories from "@/components/Categories";
 import FAQSection from "@/components/FAQSection";
@@ -11,6 +13,8 @@ export default function Home() {
       <Hero />
       <Carousel />
       <Categories />
+      <AppDownload />
+      <AboutTab />
       <FAQSection />
     </div>
   );
