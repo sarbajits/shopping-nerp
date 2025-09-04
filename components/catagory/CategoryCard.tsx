@@ -9,6 +9,7 @@ interface CategoryCardProps {
     position: PopupPosition;
     onMouseEnter: () => void;
     onMouseLeave: () => void;
+    onClick?: () => void;
 }
 
 const CategoryCard: React.FC<CategoryCardProps> = ({
@@ -17,6 +18,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({
     position,
     onMouseEnter,
     onMouseLeave,
+    onClick
 }) => {
     return (
         <div
@@ -24,6 +26,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({
             className="relative flex flex-col items-center"
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
+            onClick={onClick}
         >
             {/* Category Icon */}
             <div className="rounded-3xl overflow-hidden shadow-sm shadow-amber-50 hover:shadow-md transition-shadow duration-300">
