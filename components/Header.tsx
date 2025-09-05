@@ -32,6 +32,7 @@ const Header = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    // alert(isScrolled);
     return (
         <header className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">

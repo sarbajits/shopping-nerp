@@ -361,7 +361,7 @@ const Categories: React.FC = () => {
 
     return (
         <div className="my-4 p-4 md:p-6 mx-auto max-w-7xl" ref={containerRef}>
-            <h3 className='border-white border-b-1 text-sm md:text-2xl tracking-wider'>All catagories are best for you....</h3>
+            <h3 className='border-white border-b-1 text-sm md:text-2xl tracking-wider text-white'>All catagories are best for you....</h3>
             <div className="w-full bg-black flex justify-start">
                 <div className="text-center space-y-3 md:space-y-4">
                     <h1 className="mt-4 flex flex-wrap items-center justify-center gap-2 text-white font-bold text-2xl">

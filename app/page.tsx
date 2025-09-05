@@ -9,7 +9,7 @@ import MobilePhotoSlider from "@/components/MobilePhotoSlider";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="bg-black">
       <MobilePhotoSlider />
       <Hero />
       <Carousel />
