@@ -3,6 +3,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Category, PopupPosition } from '../types/category';
 import CategoryCard from './catagory/CategoryCard';
+import RotatingText from './RotatingText';
 
 const Categories: React.FC = () => {
     // const categories = [
@@ -360,12 +361,37 @@ const Categories: React.FC = () => {
 
     return (
         <div className="my-4 p-4 md:p-6 mx-auto max-w-7xl" ref={containerRef}>
-            <h2 className="text-fuchsia-50 text-sm md:text-base">
-                Shopping, Finance, Travel
-            </h2>
-            <h1 className="text-fuchsia-500 font-bold text-xl md:text-2xl lg:text-3xl">
-                Explore Categories
-            </h1>
+            <h3 className='border-white border-b-1 text-sm md:text-2xl tracking-wider'>All catagories are best for you....</h3>
+            <div className="w-full bg-black flex justify-start">
+                <div className="text-center space-y-3 md:space-y-4">
+                    <h1 className="mt-4 flex flex-wrap items-center justify-center gap-2 text-white font-bold text-2xl">
+                        Explore{" "}
+                        <RotatingText
+                            texts={[
+                                "Electronics",
+                                "Fashion",
+                                "Groceries",
+                                "Books",
+                                "Fitness",
+                                "Beauty",
+                                "Travel",
+                                "Finance",
+                            ]}
+                            mainClassName="px-4 bg-fuchsia-500/10 text-fuchsia-400 font-semibold overflow-hidden rounded-lg shadow-md shadow-fuchsia-500/30 transition-all duration-300"
+                            staggerFrom="last"
+                            initial={{ y: "100%" }}
+                            animate={{ y: 0 }}
+                            exit={{ y: "-120%" }}
+                            staggerDuration={0.025}
+                            splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+                            transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                            rotationInterval={2000}
+                        />
+                    </h1>
+
+                </div>
+            </div>
+
 
             <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-6 py-6 md:py-8 border-b border-gray-200">
                 {categories.map((category) => (

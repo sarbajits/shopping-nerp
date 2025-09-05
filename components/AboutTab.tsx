@@ -35,7 +35,7 @@ const AboutTab: React.FC = () => {
     return (
         <section className="w-full bg-gradient-to-b from-black to-gray-900 text-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-center mb-10 sm:mb-12 md:mb-16">
-                <span className="w-full inline-block border-t-4 border-b-4 border-fuchsia-600 px-4 py-2 tracking-wide">
+                <span className="w-full inline-block border-t-4 border-b-4 border-fuchsia-400 px-4 py-2 tracking-wide">
                     GET TO KNOW US
                 </span>
             </h2>
@@ -49,7 +49,7 @@ const AboutTab: React.FC = () => {
                             onClick={() => setActiveTab(tab.id)}
                             className={`relative px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base md:text-lg font-semibold rounded-full lg:rounded-2xl transition-all duration-300 ease-in-out
                                 ${activeTab === tab.id
-                                    ? "bg-fuchsia-600 text-white shadow-md lg:shadow-none lg:border-l-4 lg:border-fuchsia-600 hover:bg-fuchsia-800"
+                                    ? "bg-fuchsia-400 text-white shadow-md lg:shadow-none lg:border-l-4 lg:border-fuchsia-600 hover:bg-fuchsia-500"
                                     : "bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white"
                                 } transform hover:scale-105 lg:hover:scale-100`}
                         >
